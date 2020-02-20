@@ -139,3 +139,21 @@ section.form.hide{
     height: 0;
     margin-top: -70px;
 }
+
+@media(max-width:700px){
+
+	section.form{
+        display:grid;
+        grid-template-columns: 1fr;
+        padding: 10px 10px;
+      
+    }
+    .form h2{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    form input, form button{
+        width: 100%;
+
+    }
+}
