@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doe sangue! Doe vida!</title>
-    <link rel="stylesheet" href="style/style.css">>
+    <link rel="stylesheet" href="style.css">>
 
 
 </head>
@@ -23,10 +23,10 @@
     </header>
     <section class="form hide" >
         <h2>Entre na lista de doadores</h2>
-        <form action=""  method="post">
+        <form action="/"  method="POST">
             <input type="text" name="name" placeholder="Nome Completo" />
             <input type="email" name="email" placeholder="E-mail"/>
-            <input type="text" name="bloodtype" placeholder="Tipo sanguíneo" />
+            <input type="text" name="blood" placeholder="Tipo sanguíneo" />
             <button>Doe</button>
         </form>
     </section>
@@ -34,30 +34,14 @@
     <main>
         <h2>Últimos <span>doadores </span> </h2>
         <section class="donors">
+
+            {% for donor in donors %}
             <div class="donor">
-                <div class="blood">O+</div>
-                <p>Bruna Leão</p>
+                <div class="blood">{{donor.blood}}</div>
+                <p>{{donor.name}}</p>
             </div>
-            <div class="donor">
-                <div class="blood">O+</div>
-                <p>Ana Julia</p>
-            </div>
-            <div class="donor">
-                <div class="blood">A+</div>
-                <p>Ana Pereira</p>
-            </div>
-            <div class="donor">
-                <div class="blood">O+</div>
-                <p>Ana Maria</p>
-            </div>
-            <div class="donor">
-                <div class="blood">O+</div>
-                <p>Ana Telles</p>
-            </div>
-            <div class="donor">
-                <div class="blood">A+</div>
-                <p>Ana Rodrigues</p>
-            </div>
+            {%endfor%}
+           
         </section>
 
     </main>
