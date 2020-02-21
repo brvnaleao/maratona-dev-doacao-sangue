@@ -1,4 +1,4 @@
 # maratona-dev-doacao-sangue
 Aplicativo para doação de sangue
 
-**Estudo de {c:red}Nodejs, Nunjucks e utilização do PostgreSQL{/c}**
+**Estudo de <style="color:purple">Nodejs</style>, Nunjucks e utilização do PostgreSQL**
