@@ -12,8 +12,8 @@ server.use(express.urlencoded({extend: true}))
 const Pool = require('pg').Pool //tipo de conexao que irá se manter ativa
 const db = new Pool({
     user: 'postgres',
-    password: '',
-    host: 'localhost',
+    password: 'postgres',
+    host: '',
     port: 5432,
     database:'doe'
 })
