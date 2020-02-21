@@ -3,7 +3,7 @@ const server = express()
 
 
 //configurar o servidor para apresentar arquivos extras
-//configurando com o servidor com um middleware
+// middleware
 server.use(express.static('public'))
 server.use(express.urlencoded({extend: true}))
 
