@@ -12,7 +12,7 @@ server.use(express.urlencoded({extend: true}))
 const Pool = require('pg').Pool //tipo de conexao que irá se manter ativa
 const db = new Pool({
     user: 'postgres',
-    password: 'postgres',
+    password: '',
     host: '',
     port: 5432,
     database:'doe'
@@ -27,33 +27,6 @@ nunjucks.configure('./', {
 })
 
 
-/*
-const donors = [
-    {
-        name: "Bruna Leão",
-        blood: "O+"
-    },
-    {
-        name: "Ana Julia",
-        blood: "AB-"
-    },
-    {
-        name: "Ana Maria",
-        blood: "O-"
-    },
-    {
-        name: "Ana Telles",
-        blood: "B+"
-    },
-    {
-        name: "Ana Christina",
-        blood: "A+"
-    },
-    {
-        name: "Ana Thereza",
-        blood: "A-"
-    },
-] */
 
 
 server.get("/", function(req, res){
